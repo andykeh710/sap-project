@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('../partials/head'); %>
+	</head>
+	<body class="container">
+		<header><%- include('../partials/header'); %></header>
+
+		<main>
+			<div class="container">
+				<h1>TOP POTATO</h1>
+			
+				<div class="row justify-content-between">
+<div><%- include('../partials/people'); %></div>
+          <!-- YOUR EJS OR HANDLEBARS TEMPLATE LITERALS GO HERE -->
+			<div class="row justify-content-between">
+
+						<div>
+							<img src="<%= employee.picture %>">
+							<h6><%= employee.firstName%> <%= employee.lastName%></h6>
+                            <%= employee.email%>
+						</div>
+			</div>
+				</div>
+			</div>
+		</main>
+
+		<footer><%- include('../partials/footer'); %></footer>
+	</body>
+</html>
